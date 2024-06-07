@@ -31,7 +31,6 @@ function Bio({ id }) {
 export default Bio;
 
 const StyledSection = styled.div`
-  /* height: 100vh; */
   height: auto;
   background-color: #000;
 `;
@@ -39,7 +38,7 @@ const StyledSection = styled.div`
 const Container = styled.div`
   max-width: 115rem;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -77,7 +76,7 @@ const Image = styled.img`
 `;
 
 const Gallery = styled.div`
-  height: 70rem;
+  height: 40rem;
   width: 100%;
   padding: 2rem;
 `;

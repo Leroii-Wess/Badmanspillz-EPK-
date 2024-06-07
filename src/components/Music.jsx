@@ -23,7 +23,7 @@ function Music({ id }) {
 export default Music;
 
 const StyledSection = styled.div`
-  height: 100vh;
+  height: auto;
   background-image: url(${sandyBg});
   background: cover;
 `;

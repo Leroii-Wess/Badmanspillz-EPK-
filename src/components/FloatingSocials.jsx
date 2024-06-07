@@ -48,11 +48,11 @@ const Box = styled.div`
   position: absolute;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 10rem;
   right: 3rem;
-  top: 35%;
+  top: 33%;
 
-  &:after {
+  /* &:after {
     content: "";
     position: absolute;
     border-right: 1.5px solid #6c757d;
@@ -60,7 +60,7 @@ const Box = styled.div`
     width: 5px;
     top: 20.5rem;
     right: 2rem;
-  }
+  } */
 `;
 
 const ImageSpan = styled.span`
@@ -68,12 +68,12 @@ const ImageSpan = styled.span`
     content: "";
     position: absolute;
     border-right: 1.5px solid #6c757d;
-    height: 3rem;
+    height: 9rem;
     width: 5px;
     top: 4.5rem;
     right: 2rem;
   }
-  &:after {
+  /* &:after {
     content: "";
     position: absolute;
     border-right: 1.5px solid #6c757d;
@@ -81,7 +81,7 @@ const ImageSpan = styled.span`
     width: 5px;
     top: 12.5rem;
     right: 2rem;
-  }
+  } */
 `;
 
 const Image = styled.img`
