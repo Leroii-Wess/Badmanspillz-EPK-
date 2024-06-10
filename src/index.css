@@ -29,4 +29,30 @@ body {
   font-weight: 300;
   line-height: 1.9;
   font-size: 1.7rem;
+  padding: 2% 10%;
+}
+
+@media (max-width: 76em) {
+  body {
+    padding: 1% 8%;
+  }
+}
+
+@media (max-width: 54em) {
+  body {
+    padding: 1% 6%;
+  }
+}
+
+@media (max-width: 47em) {
+  body {
+    padding: 0 5%;
+  }
+}
+
+@media (max-width: 37em) {
+  body {
+    padding: 0 0;
+    background-color: #383838;
+  }
 }

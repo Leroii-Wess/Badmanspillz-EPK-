@@ -1,23 +1,24 @@
 import styled from "styled-components";
 import { BsEnvelopeAt } from "react-icons/bs";
 import FloatingSocials from "./FloatingSocials";
-import logo from "../images/bms-logo.png";
 
 function Contact({ id }) {
   return (
     <StyledSection id={id}>
-      <H2>Contact</H2>
-      <Card>
-        <Mail href="mailto:bookspillz@gmail.com">
+      <Container>
+        <H2>Contact</H2>
+        <Card>
           <BsEnvelopeAt />
-          <p>bookspillz@gmail.com</p>
-        </Mail>
+          <Mail href="mailto:bookspillz@gmail.com">
+            <Text>bookspillz@gmail.com</Text>
+          </Mail>
 
-        <FloatingSocials />
-      </Card>
-      <Copyright>
-        &copy; {new Date().getFullYear()} Copyright BMS Inc.
-      </Copyright>
+          <FloatingSocials />
+        </Card>
+        <Copyright>
+          &copy; {new Date().getFullYear()} Copyright BMS Inc.
+        </Copyright>
+      </Container>
     </StyledSection>
   );
 }
@@ -25,37 +26,70 @@ function Contact({ id }) {
 export default Contact;
 
 const StyledSection = styled.div`
-  height: 100vh;
+  height: auto;
   background-color: #000;
   padding: 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
+  /* justify-content: center; */
 `;
 
 const H2 = styled.h2`
   margin-bottom: 8rem;
 `;
 
+const Container = styled.div`
+  width: 80%;
+  margin: 0rem auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
 const Mail = styled.a`
   text-decoration: none;
   color: #fff;
-  display: flex;
   gap: 2rem;
-  justify-content: center;
-  align-items: center;
+
   font-size: 3rem;
+  &:hover {
+    color: var(--color-primary);
+  }
+
+  @media (max-width: 64em) {
+    font-size: 2rem;
+  }
+  @media (max-width: 54em) {
+    font-size: 1.8rem;
+  }
+`;
+
+const Text = styled.span`
+  display: inline-block;
+  margin-left: 2rem;
+
+  @media (max-width: 54em) {
+    margin-left: 1rem;
+  }
+  @media (max-width: 37em) {
+    font-size: 1.4rem;
+  }
+  @media (max-width: 28em) {
+    font-size: 1.5rem;
+  }
 `;
 
 const Card = styled.div`
-  height: 50rem;
-  width: 80rem;
+  height: 40rem;
+  width: 80%;
   background-color: var(--color-primary);
   background-image: linear-gradient(45deg, #301934, #111);
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
+  font-size: 3rem;
 
   /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
@@ -64,8 +98,29 @@ const Card = styled.div`
     rgba(240, 46, 170, 0.05) 25px 25px;
 
   margin-bottom: 10rem;
+
+  @media (max-width: 64em) {
+    font-size: 2rem;
+    height: 30rem;
+  }
+  @media (max-width: 54em) {
+    font-size: 1.8rem;
+    height: 25rem;
+  }
+  @media (max-width: 37em) {
+    font-size: 1.5rem;
+    height: 18rem;
+  }
+  @media (max-width: 28em) {
+    font-size: 1.5rem;
+    width: 100%;
+  }
 `;
 
 const Copyright = styled.p`
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  color: #cdcdcd;
+  @media (max-width: 54em) {
+    font-size: 1rem;
+  }
 `;

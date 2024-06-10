@@ -56,7 +56,7 @@ const Box = styled.div`
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  right: 3rem;
+  right: 3%;
   top: 35%;
 
   &:after {
@@ -67,6 +67,19 @@ const Box = styled.div`
     width: 5px;
     top: 20.5rem;
     right: 2rem;
+
+    @media (max-width: 64em) {
+      top: 17.5rem;
+      right: 2.4rem;
+    }
+  }
+
+  @media (max-width: 64em) {
+    top: 30%;
+  }
+  @media (max-width: 28em) {
+    top: 25%;
+    right: 2%;
   }
 `;
 
@@ -79,6 +92,11 @@ const ImageSpan = styled.span`
     width: 5px;
     top: 4.5rem;
     right: 2rem;
+
+    @media (max-width: 64em) {
+      top: 3.5rem;
+      right: 2.4rem;
+    }
   }
   &:after {
     content: "";
@@ -88,6 +106,11 @@ const ImageSpan = styled.span`
     width: 5px;
     top: 12.5rem;
     right: 2rem;
+
+    @media (max-width: 64em) {
+      top: 10.5rem;
+      right: 2.4rem;
+    }
   }
 `;
 
@@ -103,4 +126,9 @@ const Image = styled.img`
   cursor: pointer;
   position: relative;
   z-index: 5;
+
+  @media (max-width: 64em) {
+    height: 3rem;
+    width: 3rem;
+  }
 `;

@@ -1,8 +1,4 @@
 import styled from "styled-components";
-import spotify from "../images/icons/spotify-logo.png";
-import apple from "../images/icons/apple-logo.png";
-import youtube from "../images/icons/youtube-logo.png";
-
 import twitterx from "../images/icons/X-Logo.png";
 import instagram from "../images/icons/instagram.png";
 
@@ -52,6 +48,25 @@ const Box = styled.div`
   right: 3rem;
   top: 33%;
 
+  @media (max-width: 64em) {
+    top: 20%;
+    right: 2.4rem;
+  }
+  @media (max-width: 54em) {
+    right: 2rem;
+  }
+  @media (max-width: 37em) {
+    right: 0.5rem;
+    gap: 7rem;
+  }
+  @media (max-width: 37em) {
+    right: 0.1rem;
+    top: 15%;
+  }
+  @media (max-width: 28em) {
+    right: 0;
+  }
+
   /* &:after {
     content: "";
     position: absolute;
@@ -72,6 +87,22 @@ const ImageSpan = styled.span`
     width: 5px;
     top: 4.5rem;
     right: 2rem;
+
+    @media (max-width: 64em) {
+      top: 4.2rem;
+      right: 2.1rem;
+      height: 8.5rem;
+    }
+    @media (max-width: 54em) {
+      top: 3.5rem;
+      right: 2.4rem;
+      height: 8.9rem;
+    }
+    @media (max-width: 37em) {
+      top: 3.25rem;
+      right: 2.4rem;
+      height: 6rem;
+    }
   }
   /* &:after {
     content: "";
@@ -96,4 +127,17 @@ const Image = styled.img`
   cursor: pointer;
   position: relative;
   z-index: 5;
+
+  @media (max-width: 64em) {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+  @media (max-width: 54em) {
+    height: 3rem;
+    width: 3rem;
+  }
+  @media (max-width: 37em) {
+    height: 2.8rem;
+    width: 2.8rem;
+  }
 `;

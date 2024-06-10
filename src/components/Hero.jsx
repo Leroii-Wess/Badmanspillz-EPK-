@@ -17,7 +17,7 @@ function Hero() {
 export default Hero;
 
 const StyledMain = styled.div`
-  height: 100vh;
+  height: auto;
   background-image: url(${bg});
   margin-top: 4rem;
   background-size: contain;
@@ -28,4 +28,8 @@ const StyledMain = styled.div`
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   position: relative;
+
+  @media (max-width: 54em) {
+    margin-top: 0;
+  }
 `;

@@ -20,4 +20,13 @@ const StyledImg = styled.img`
   &:hover {
     border-bottom: 2px solid var(--color-primary);
   }
+  @media (max-width: 64em) {
+    height: 6rem;
+  }
+  @media (max-width: 54em) {
+    height: 5rem;
+  }
+  @media (max-width: 54em) {
+    height: 5rem;
+  }
 `;

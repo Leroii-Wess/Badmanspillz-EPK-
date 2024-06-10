@@ -36,7 +36,7 @@ const StyledSection = styled.div`
 `;
 
 const Container = styled.div`
-  max-width: 115rem;
+  max-width: 80%;
   margin: 0 auto;
   padding: 4rem;
   display: flex;
@@ -45,38 +45,91 @@ const Container = styled.div`
   justify-content: center;
 
   gap: 3rem;
+
+  @media (max-width: 37em) {
+    padding: 1rem;
+  }
+  @media (max-width: 28em) {
+    gap: 1rem;
+  }
 `;
 
 const H2 = styled.h2`
   margin-bottom: 5rem;
   text-transform: uppercase;
+
+  @media (max-width: 64em) {
+    margin-bottom: 2rem;
+  }
+  @media (max-width: 54em) {
+    font-size: 2rem;
+  }
 `;
 
 const BioBox = styled.div`
   height: 40rem;
+  max-width: 100%;
   padding: 3rem;
   display: flex;
   gap: 4rem;
   justify-content: space-between;
   margin-bottom: 4rem;
+
+  @media (max-width: 64em) {
+    padding: 2rem;
+    margin-bottom: 12rem;
+  }
+  @media (max-width: 54em) {
+    margin-bottom: 2rem;
+    gap: 2rem;
+  }
+  @media (max-width: 28em) {
+    padding: 0;
+  }
 `;
 
 const TextBox = styled.div`
-  width: 50%;
+  width: 60%;
+  font-size: 1.8rem;
+  line-height: 1.6;
+
+  @media (max-width: 64em) {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+  @media (max-width: 54em) {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  @media (max-width: 28em) {
+    width: 50%;
+    font-size: 1.1rem;
+  }
 `;
 const ImageBox = styled.div`
-  display: flex;
-  align-items: center;
-  width: 50%;
-  justify-content: center;
+  width: 40%;
+  @media (max-width: 28em) {
+    width: 50%;
+    height: 80%;
+  }
 `;
 
 const Image = styled.img`
   height: 100%;
+  @media (max-width: 54em) {
+    height: 90%;
+  }
+  @media (max-width: 28em) {
+    height: 75%;
+  }
 `;
 
 const Gallery = styled.div`
   height: 40rem;
-  width: 100%;
+  max-width: 100%;
   padding: 2rem;
+
+  @media (max-width: 28em) {
+    padding: 0;
+  }
 `;

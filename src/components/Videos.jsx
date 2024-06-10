@@ -18,7 +18,7 @@ function Videos({ id }) {
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
           ></iframe>
-          <h3>Badmanspillz - TKG (Official Music Video)</h3>
+          <Title>Badmanspillz - TKG (Official Music Video)</Title>
         </VideoDiv>
         <VideoDiv>
           <iframe
@@ -31,7 +31,7 @@ function Videos({ id }) {
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
           ></iframe>
-          <h3>Badmanspillz - What Have You Done To Me? (Visualizer)</h3>
+          <Title>Badmanspillz - What Have You Done To Me? (Visualizer)</Title>
         </VideoDiv>
         <VideoDiv>
           <iframe
@@ -44,7 +44,7 @@ function Videos({ id }) {
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
           ></iframe>
-          <h3>Badmanspillz - You || Fatal Attraction (Visualizer)</h3>
+          <Title>Badmanspillz - You || Fatal Attraction (Visualizer)</Title>
         </VideoDiv>
       </Container>
     </StyledSection>
@@ -68,20 +68,44 @@ const StyledSection = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 5rem;
+
+  @media (max-width: 54em) {
+    gap: 1rem;
+  }
 `;
 
 const H2 = styled.h2`
   font-family: inherit;
   font-size: 3rem;
   text-transform: uppercase;
+
+  @media (max-width: 54em) {
+    font-size: 2rem;
+  }
+`;
+
+const Title = styled.h3`
+  font-size: 1.8rem;
+
+  @media (max-width: 54em) {
+    font-size: 1.5rem;
+  }
 `;
 
 const Container = styled.div`
-  width: 120rem;
+  width: 80%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5rem;
+
+  @media (max-width: 64em) {
+    padding: 2rem;
+  }
+  @media (max-width: 54em) {
+    gap: 2rem;
+  }
 `;
 
 const VideoDiv = styled.div`
@@ -95,4 +119,20 @@ const VideoDiv = styled.div`
 
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 64em) {
+    padding: 2rem 10rem;
+  }
+  @media (max-width: 54em) {
+    padding: 2rem 18rem;
+  }
+  @media (max-width: 37em) {
+    width: 800px;
+    height: 450px;
+  }
+  @media (max-width: 28em) {
+    padding: 2rem 18rem;
+    width: 750px;
+    height: 421.88px;
+  }
 `;
