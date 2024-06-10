@@ -19,6 +19,9 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -30,23 +33,26 @@ body {
   line-height: 1.9;
   font-size: 1.7rem;
   padding: 2% 10%;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 @media (max-width: 76em) {
   body {
-    padding: 1% 8%;
+    padding: 2% 8%;
   }
 }
 
 @media (max-width: 54em) {
   body {
-    padding: 1% 6%;
+    padding: 2% 6%;
   }
 }
 
 @media (max-width: 47em) {
   body {
-    padding: 0 5%;
+    padding: 2% 5%;
   }
 }
 

@@ -55,6 +55,7 @@ export default Videos;
 
 const StyledSection = styled.div`
   height: auto;
+  max-width: 100vw;
   padding: 4rem 3rem;
 
   background-image: url(${bg});

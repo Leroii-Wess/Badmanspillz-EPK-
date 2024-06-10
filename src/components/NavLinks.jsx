@@ -92,6 +92,7 @@ const Menu = styled.div`
   top: 1%;
   right: 5%;
   z-index: 10;
+
   @media (max-width: 47em) {
     display: flex;
   }

@@ -28,6 +28,7 @@ const StyledSection = styled.div`
   height: auto;
   background-image: url(${sandyBg});
   background: cover;
+  max-width: 100vw;
 `;
 
 const GlassDiv = styled.div`
@@ -64,6 +65,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
   @media (max-width: 37em) {
     width: 95%;
   }

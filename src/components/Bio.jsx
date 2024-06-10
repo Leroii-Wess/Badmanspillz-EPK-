@@ -32,7 +32,10 @@ export default Bio;
 
 const StyledSection = styled.div`
   height: auto;
+  max-width: 100vw;
   background-color: #000;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 `;
 
 const Container = styled.div`

@@ -27,10 +27,11 @@ export default Contact;
 
 const StyledSection = styled.div`
   height: auto;
+  max-width: 100vw;
   background-color: #000;
   padding: 5rem;
-
-  /* justify-content: center; */
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 `;
 
 const H2 = styled.h2`
@@ -91,8 +92,6 @@ const Card = styled.div`
   align-items: center;
   font-size: 3rem;
 
-  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
   box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
     rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
     rgba(240, 46, 170, 0.05) 25px 25px;
