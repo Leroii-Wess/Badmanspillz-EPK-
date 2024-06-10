@@ -65,6 +65,8 @@ const Box = styled.div`
   }
   @media (max-width: 28em) {
     right: 0;
+    top: 12%;
+    gap: 6rem;
   }
 
   /* &:after {
@@ -100,8 +102,11 @@ const ImageSpan = styled.span`
     }
     @media (max-width: 37em) {
       top: 3.25rem;
-      right: 2.4rem;
+      right: 2.5rem;
       height: 6rem;
+    }
+    @media (max-width: 28em) {
+      height: 5rem;
     }
   }
   /* &:after {

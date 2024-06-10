@@ -34,7 +34,7 @@ const StyledSection = styled.div`
 const GlassDiv = styled.div`
   height: auto;
   width: 100%;
-  padding: 3rem;
+  padding: 2rem;
   padding-bottom: 8rem;
   border: 1px solid rgba(255, 255, 255, 0.25);
   background-color: rgba(255, 255, 255, 0.148);
@@ -67,6 +67,6 @@ const Container = styled.div`
   justify-content: center;
 
   @media (max-width: 37em) {
-    width: 95%;
+    width: 100%;
   }
 `;

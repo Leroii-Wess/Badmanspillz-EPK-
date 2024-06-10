@@ -105,7 +105,7 @@ const ContentDiv = styled.div`
   justify-content: center;
 
   @media (max-width: 37em) {
-    width: 36rem;
+    width: 28rem;
     align-items: center;
   }
 `;

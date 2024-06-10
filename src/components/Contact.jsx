@@ -64,6 +64,9 @@ const Mail = styled.a`
   @media (max-width: 54em) {
     font-size: 1.8rem;
   }
+  @media (max-width: 28em) {
+    font-size: 1.5rem;
+  }
 `;
 
 const Text = styled.span`
@@ -77,7 +80,8 @@ const Text = styled.span`
     font-size: 1.4rem;
   }
   @media (max-width: 28em) {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
   }
 `;
 
@@ -111,8 +115,9 @@ const Card = styled.div`
     height: 18rem;
   }
   @media (max-width: 28em) {
-    font-size: 1.5rem;
+    font-size: 1rem;
     width: 100%;
+    height: 15rem;
   }
 `;
 

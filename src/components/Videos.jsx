@@ -90,6 +90,7 @@ const Title = styled.h3`
 
   @media (max-width: 54em) {
     font-size: 1.5rem;
+    padding: 1rem;
   }
 `;
 
