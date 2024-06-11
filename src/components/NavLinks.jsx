@@ -42,10 +42,6 @@ const StyledNav = styled.ul`
     flex-direction: column;
     width: 100vw;
     background-color: #be56faa2;
-    /* background: rgba(0, 0, 0, 0.2); */
-    /* backdrop-filter: blur(20px); */
-
-    /* background-color: #ddd; */
 
     z-index: 2;
     position: absolute;
