@@ -25,6 +25,6 @@ const StyledHeader = styled.header`
     padding: 0 5rem;
   }
   @media (max-width: 37em) {
-    padding: 0 1rem;
+    padding: 0;
   }
 `;

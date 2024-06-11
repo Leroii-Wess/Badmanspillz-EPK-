@@ -1,12 +1,10 @@
 import styled from "styled-components";
 import "../index.css";
-import { useState } from "react";
 import { useNavigation } from "../Context/NavigationContext";
 import { IoMenu, IoClose } from "react-icons/io5";
 
 function NavLinks() {
-  const { scrollToSection } = useNavigation();
-  const [menuOpen, setMenuOpen] = useState(false);
+  const { scrollToSection, menuOpen, setMenuOpen } = useNavigation();
 
   function handleClick() {
     setMenuOpen((open) => !open);
@@ -41,10 +39,13 @@ const StyledNav = styled.ul`
   column-gap: 2rem;
 
   @media (max-width: 47em) {
-    /* display: none; */
     flex-direction: column;
-    width: 80%;
-    background-color: #000;
+    width: 100vw;
+    background-color: #be56faa2;
+    /* background: rgba(0, 0, 0, 0.2); */
+    /* backdrop-filter: blur(20px); */
+
+    /* background-color: #ddd; */
 
     z-index: 2;
     position: absolute;
